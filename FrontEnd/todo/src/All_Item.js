@@ -6,7 +6,7 @@ import { disconnect } from 'mongoose'
         const [data,setData] = useState([])
         const [statusDone,setStatusDone]= useState([])
         useEffect(()=>{
-            fetch('http://localhost:5000/mypost',{
+            fetch('/mypost',{
                 headers:{
                     "Authorization":"Bearer "+localStorage.getItem("jwt")
                 }
@@ -20,7 +20,7 @@ import { disconnect } from 'mongoose'
             
         },[])
         const deletePost =(postId)=>{
-            fetch(`http://localhost:5000/deletePost/${postId}`,{
+            fetch(`/deletePost/${postId}`,{
                 method:"delete",
                 headers:{
                     "Authorization":"Bearer "+localStorage.getItem("jwt")

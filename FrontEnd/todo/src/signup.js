@@ -12,7 +12,7 @@ const Signup = ()=>{
 
     const uploadFields =()=>{
        
-        fetch('http://localhost:5000/signup',{
+        fetch('/signup',{
             
             method:'post',
             headers:{
