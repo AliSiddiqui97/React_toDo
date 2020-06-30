@@ -12,7 +12,7 @@ User can add task
 User can modify task (update/delete)
 
 
-
+# To run:
  To run the server write "node app.js" in the terminal ( main directory )
 
  To run the client write "npm start" in the FrontEnd directory.
