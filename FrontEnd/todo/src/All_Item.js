@@ -81,6 +81,9 @@ import { disconnect } from 'mongoose'
                     <a class="btn btn-success mr-2"  onClick={()=>update(item._id) }>Done</a>
                     <a class="btn btn-secondary mr-2"  onClick={()=>updateundone(item._id) }>Un-done</a>
                     <a class="btn btn-danger" onClick={()=>deletePost(item._id)}>Delete</a>
+                    <div class=" text-muted">
+                        Date: {item.createdAt}
+                    </div>
                 </div>
               
             ))}
